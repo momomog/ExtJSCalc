@@ -8,6 +8,6 @@ Ext.application({
     ],
 
     mainView: 'ExtJSCalculator.view.main.Main'
-	
+
 
 });

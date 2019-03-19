@@ -3,16 +3,9 @@ Ext.define('ExtJSCalculator.store.CalculationStore', {
 
     alias: 'store.calculationStore',
     storeId: 'calculationStore',
-
     fields: [
         'operation', 'result'
     ],
-
-    data: {
-        items: [
-
-        ]},
-
     proxy: {
         type: 'memory',
         reader: {

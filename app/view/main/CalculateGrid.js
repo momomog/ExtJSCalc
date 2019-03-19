@@ -1,32 +1,34 @@
-
 Ext.define('ExtJSCalculator.view.main.CalculateGrid', {
     extend: 'Ext.grid.Panel',
     xtype: 'calculateGrid',
-
+    controller: 'grid',
     requires: [
-        'ExtJSCalculator.store.CalculationStore'
+        'ExtJSCalculator.store.CalculationStore',
+        'ExtJSCalculator.view.main.GridController'
     ],
 
-    width: 300,
-    height: 466,
+
     title: 'Results list',
     margin: '0 0 0 14',
     reference: 'gridPanel',
     scrollable: true,
 
-    store: {
-        type: 'calculationStore'
+    bind: {
+        store: '{calculationStore}'
     },
 
     columns: [
         {
-        text: 'Operation',
-        flex: 1,
-        dataIndex: 'operation'
+            text: 'Operation',
+            dataIndex: 'operation',
+            flex: 1,
+            align: 'left'
         }, {
-        text: 'Result',
-        flex: 1,
-        dataIndex: 'result'
+            xtype: 'numbercolumn',
+            dataIndex: 'result',
+            text: 'Result',
+            flex: 1,
+            align: 'left'
         }
     ],
 
