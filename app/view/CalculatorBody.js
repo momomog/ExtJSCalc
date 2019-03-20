@@ -1,4 +1,4 @@
-Ext.define('ExtJSCalculator.view.main.CalculatorBody', {
+Ext.define('ExtJSCalculator.view.CalculatorBody', {
     extend: 'Ext.panel.Panel',
     xtype: 'calculatorBody',
 
@@ -6,7 +6,7 @@ Ext.define('ExtJSCalculator.view.main.CalculatorBody', {
     controller: 'calculator',
 
     requires: [
-        'ExtJSCalculator.view.main.CalculatorController'
+        'ExtJSCalculator.controller.CalculatorController'
     ],
 
     items: [{

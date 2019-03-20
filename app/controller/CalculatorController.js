@@ -1,4 +1,4 @@
-Ext.define('ExtJSCalculator.view.main.CalculatorController', {
+Ext.define('ExtJSCalculator.controller.CalculatorController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.calculator',
 

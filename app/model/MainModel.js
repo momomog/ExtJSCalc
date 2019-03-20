@@ -1,4 +1,4 @@
-Ext.define('ExtJSCalculator.view.main.MainModel', {
+Ext.define('ExtJSCalculator.model.MainModel', {
     extend: 'Ext.app.ViewModel',
 
     alias: 'viewmodel.mainModel',

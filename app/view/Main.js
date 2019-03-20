@@ -1,11 +1,11 @@
-Ext.define('ExtJSCalculator.view.main.Main', {
+Ext.define('ExtJSCalculator.view.Main', {
     extend: 'Ext.container.Viewport',
 
     requires: [
-        'ExtJSCalculator.view.main.MainController',
-        'ExtJSCalculator.view.main.MainModel',
-        'ExtJSCalculator.view.main.CalculateGrid',
-        'ExtJSCalculator.view.main.CalculatorBody'
+        'ExtJSCalculator.controller.MainController',
+        'ExtJSCalculator.model.MainModel',
+        'ExtJSCalculator.view.CalculateGrid',
+        'ExtJSCalculator.view.CalculatorBody'
     ],
 
     controller: 'mainController',

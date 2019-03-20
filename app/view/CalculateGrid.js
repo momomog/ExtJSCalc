@@ -1,9 +1,9 @@
-Ext.define('ExtJSCalculator.view.main.CalculateGrid', {
+Ext.define('ExtJSCalculator.view.CalculateGrid', {
     extend: 'Ext.grid.Panel',
     xtype: 'calculateGrid',
     controller: 'grid',
     requires: [
-        'ExtJSCalculator.view.main.GridController'
+        'ExtJSCalculator.controller.GridController'
     ],
 
 

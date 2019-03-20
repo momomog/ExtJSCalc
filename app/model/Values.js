@@ -1,4 +1,4 @@
-Ext.define('ExtJSCalculator.data.Values', {
+Ext.define('ExtJSCalculator.model.Values', {
     extend: 'Ext.data.Model',
 
     fields: [

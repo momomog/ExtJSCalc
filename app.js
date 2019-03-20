@@ -4,10 +4,10 @@ Ext.application({
     extend: 'ExtJSCalculator.Application',
 
     requires: [
-        'ExtJSCalculator.view.main.Main'
+        'ExtJSCalculator.view.Main'
     ],
 
-    mainView: 'ExtJSCalculator.view.main.Main'
+    mainView: 'ExtJSCalculator.view.Main'
 
 
 });

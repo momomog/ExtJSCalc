@@ -1,4 +1,4 @@
-Ext.define('ExtJSCalculator.view.main.GridController', {
+Ext.define('ExtJSCalculator.controller.GridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.grid',
 

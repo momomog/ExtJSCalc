@@ -4,11 +4,11 @@ Ext.define('ExtJSCalculator.store.CalculationStore', {
     alias: 'store.calculationStore',
 
     requires: [
-        'ExtJSCalculator.data.Values'
+        'ExtJSCalculator.model.Values'
     ],
 
     storeId: 'calculationStore',
-    model: 'ExtJSCalculator.data.Values',
+    model: 'ExtJSCalculator.model.Values',
 
     proxy: {
         type: 'memory',
