@@ -3,7 +3,6 @@ Ext.define('ExtJSCalculator.view.main.CalculateGrid', {
     xtype: 'calculateGrid',
     controller: 'grid',
     requires: [
-        'ExtJSCalculator.store.CalculationStore',
         'ExtJSCalculator.view.main.GridController'
     ],
 
@@ -28,7 +27,8 @@ Ext.define('ExtJSCalculator.view.main.CalculateGrid', {
             dataIndex: 'result',
             text: 'Result',
             flex: 1,
-            align: 'left'
+            align: 'left',
+            format: '0.000'
         }
     ],
 
