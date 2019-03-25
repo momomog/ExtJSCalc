@@ -5,7 +5,7 @@ Ext.define('ExtJSCalculator.controller.GridController', {
     dblclick: function () {
         var vm = this.getViewModel();
         var store = vm.get('calculationStore');
-        var gridPanel = this.lookupReference('gridPanel');
+        var gridPanel = this.getView();
         var currentRowIndex = gridPanel.getSelectionModel().getCurrentPosition().rowIdx;
         var currentValue = store.getAt(currentRowIndex).get('result');
         vm.set('opDisplay', '');

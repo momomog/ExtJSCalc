@@ -6,10 +6,8 @@ Ext.define('ExtJSCalculator.view.CalculateGrid', {
         'ExtJSCalculator.controller.GridController'
     ],
 
-
     title: 'Results list',
     margin: '0 0 0 14',
-    reference: 'gridPanel',
     scrollable: true,
 
     bind: {

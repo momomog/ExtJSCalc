@@ -24,7 +24,7 @@ Ext.define('ExtJSCalculator.controller.CalculatorController', {
         if (display > 0) {
             vm.set('opDisplay', ('√' + display));
             vm.set('display', Math.sqrt(display));
-            var store = Ext.getStore('calculationStore');
+            var store = Ext.data.StoreManager.lookup('calculationStore');
             store.add({
                 operation: vm.get('opDisplay'),
                 result: vm.get('display')
@@ -76,7 +76,7 @@ Ext.define('ExtJSCalculator.controller.CalculatorController', {
                 }
             }
         }
-        var store = Ext.getStore('calculationStore');
+        var store = Ext.data.StoreManager.lookup('calculationStore');
         if (!(vm.get('opDisplay') === 'Division by zero' || vm.get('opDisplay') === 'Negative root' || vm.get('opDisplay') === '')) {
             store.add({
                 operation: vm.get('opDisplay'),
